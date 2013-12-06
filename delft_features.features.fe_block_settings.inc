@@ -350,6 +350,27 @@ islandora/search/*',
     'visibility' => 0,
   );
 
+  $export['system-main'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'main',
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'dtu_theme' => array(
+        'region' => 'content',
+        'status' => 1,
+        'theme' => 'dtu_theme',
+        'weight' => -18,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['system-main-menu'] = array(
     'cache' => -1,
     'css_class' => '',
