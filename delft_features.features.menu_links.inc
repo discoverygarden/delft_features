@@ -187,71 +187,9 @@ function delft_features_menu_default_menu_links() {
     'weight' => -46,
     'customized' => 1,
   );
-  // Exported menu link: menu-footer-men_colofon:uuid/node/68109751-128f-4c0c-ad10-6002811fc4d9
-  $menu_links['menu-footer-men_colofon:uuid/node/68109751-128f-4c0c-ad10-6002811fc4d9'] = array(
-    'menu_name' => 'menu-footer-men',
-    'link_path' => 'uuid/node/68109751-128f-4c0c-ad10-6002811fc4d9',
-    'router_path' => 'uuid',
-    'link_title' => 'Colofon',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-footer-men_colofon:uuid/node/68109751-128f-4c0c-ad10-6002811fc4d9',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -48,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-footer-men_contribute:uuid/node/7c665113-a067-4a9e-b972-b81bd22c88e9
-  $menu_links['menu-footer-men_contribute:uuid/node/7c665113-a067-4a9e-b972-b81bd22c88e9'] = array(
-    'menu_name' => 'menu-footer-men',
-    'link_path' => 'uuid/node/7c665113-a067-4a9e-b972-b81bd22c88e9',
-    'router_path' => 'uuid',
-    'link_title' => 'Contribute',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-footer-men_contribute:uuid/node/7c665113-a067-4a9e-b972-b81bd22c88e9',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-  );
-  // Exported menu link: menu-footer-men_terms-of-use:uuid/node/aae0ba6f-9acf-4870-b387-ee77d903ebc1
-  $menu_links['menu-footer-men_terms-of-use:uuid/node/aae0ba6f-9acf-4870-b387-ee77d903ebc1'] = array(
-    'menu_name' => 'menu-footer-men',
-    'link_path' => 'uuid/node/aae0ba6f-9acf-4870-b387-ee77d903ebc1',
-    'router_path' => 'uuid',
-    'link_title' => 'Terms of Use',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'menu-footer-men_terms-of-use:uuid/node/aae0ba6f-9acf-4870-b387-ee77d903ebc1',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -49,
-    'customized' => 1,
-  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Buildings & Town plans');
-  t('Colofon');
-  t('Contribute');
   t('Documents');
   t('Home');
   t('Images');
@@ -260,7 +198,6 @@ function delft_features_menu_default_menu_links() {
   t('Persons');
   t('Sign in or register');
   t('Sign out');
-  t('Terms of Use');
 
 
   return $menu_links;
