@@ -10,6 +10,46 @@
 function delft_features_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: main-menu_about:uuid/node/16ab8dfd-ed0f-4e96-a470-63d3cfcf540b
+  $menu_links['main-menu_about:uuid/node/16ab8dfd-ed0f-4e96-a470-63d3cfcf540b'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'uuid/node/16ab8dfd-ed0f-4e96-a470-63d3cfcf540b',
+    'router_path' => 'uuid',
+    'link_title' => 'About',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_about:uuid/node/16ab8dfd-ed0f-4e96-a470-63d3cfcf540b',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+  );
+  // Exported menu link: main-menu_contact:uuid/node/d4ece5a6-433e-41e2-a3b6-e066409fb3c1
+  $menu_links['main-menu_contact:uuid/node/d4ece5a6-433e-41e2-a3b6-e066409fb3c1'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'uuid/node/d4ece5a6-433e-41e2-a3b6-e066409fb3c1',
+    'router_path' => 'uuid',
+    'link_title' => 'Contact',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'main-menu_contact:uuid/node/d4ece5a6-433e-41e2-a3b6-e066409fb3c1',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+  );
   // Exported menu link: main-menu_home:<front>
   $menu_links['main-menu_home:<front>'] = array(
     'menu_name' => 'main-menu',
@@ -189,7 +229,9 @@ function delft_features_menu_default_menu_links() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('About');
   t('Buildings & Town plans');
+  t('Contact');
   t('Documents');
   t('Home');
   t('Images');
