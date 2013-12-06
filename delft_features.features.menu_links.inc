@@ -187,17 +187,17 @@ function delft_features_menu_default_menu_links() {
     'weight' => -46,
     'customized' => 1,
   );
-  // Exported menu link: menu-footer-men_contribute:node/8
-  $menu_links['menu-footer-men_contribute:node/8'] = array(
+  // Exported menu link: menu-footer-men_contribute:uuid/node/7c665113-a067-4a9e-b972-b81bd22c88e9
+  $menu_links['menu-footer-men_contribute:uuid/node/7c665113-a067-4a9e-b972-b81bd22c88e9'] = array(
     'menu_name' => 'menu-footer-men',
-    'link_path' => 'node/8',
-    'router_path' => 'node/%',
+    'link_path' => 'uuid/node/7c665113-a067-4a9e-b972-b81bd22c88e9',
+    'router_path' => 'uuid',
     'link_title' => 'Contribute',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'menu-footer-men_contribute:node/8',
+      'identifier' => 'menu-footer-men_contribute:uuid/node/7c665113-a067-4a9e-b972-b81bd22c88e9',
     ),
     'module' => 'menu',
     'hidden' => 0,
