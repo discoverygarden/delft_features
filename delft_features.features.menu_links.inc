@@ -187,9 +187,30 @@ function delft_features_menu_default_menu_links() {
     'weight' => -46,
     'customized' => 1,
   );
+  // Exported menu link: menu-footer-men_contribute:node/8
+  $menu_links['menu-footer-men_contribute:node/8'] = array(
+    'menu_name' => 'menu-footer-men',
+    'link_path' => 'node/8',
+    'router_path' => 'node/%',
+    'link_title' => 'Contribute',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-footer-men_contribute:node/8',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Buildings & Town plans');
+  t('Contribute');
   t('Documents');
   t('Home');
   t('Images');
