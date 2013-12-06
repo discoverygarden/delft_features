@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the delft_features feature.
+ */
+
+include_once 'delft_features.features.inc';
