@@ -57,6 +57,7 @@ features[fe_block_settings][] = menu-menu-browse-by-category
 features[fe_block_settings][] = menu-menu-footer-men
 features[fe_block_settings][] = system-main
 features[fe_block_settings][] = system-main-menu
+features[fe_block_settings][] = system-navigation
 features[fe_block_settings][] = views-image_blocks-block
 features[features_api][] = api:2
 features[field_base][] = body
