@@ -413,6 +413,27 @@ islandora/search/*',
     'visibility' => 0,
   );
 
+  $export['system-user-menu'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'user-menu',
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'dtu_theme' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'dtu_theme',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['views-image_blocks-block'] = array(
     'cache' => -1,
     'css_class' => '',
