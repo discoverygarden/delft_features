@@ -413,12 +413,12 @@ islandora/search/*',
     'visibility' => 0,
   );
 
-  $export['system-user-menu'] = array(
+  $export['user-login'] = array(
     'cache' => -1,
     'css_class' => '',
     'custom' => 0,
-    'delta' => 'user-menu',
-    'module' => 'system',
+    'delta' => 'login',
+    'module' => 'user',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
