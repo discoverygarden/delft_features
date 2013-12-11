@@ -13,16 +13,37 @@ function delft_features_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'admin_theme';
-  $strongarm->value = 'seven';
-  $export['admin_theme'] = $strongarm;
+  $strongarm->name = 'clean_url';
+  $strongarm->value = TRUE;
+  $export['clean_url'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'clean_url';
-  $strongarm->value = TRUE;
-  $export['clean_url'] = $strongarm;
+  $strongarm->name = 'comment_anonymous_page';
+  $strongarm->value = 0;
+  $export['comment_anonymous_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_mode_page';
+  $strongarm->value = 1;
+  $export['comment_default_mode_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_default_per_page_page';
+  $strongarm->value = '50';
+  $export['comment_default_per_page_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'comment_form_location_page';
+  $strongarm->value = 1;
+  $export['comment_form_location_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -34,46 +55,16 @@ function delft_features_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'css_js_query_string';
-  $strongarm->value = 'mxee9n';
-  $export['css_js_query_string'] = $strongarm;
+  $strongarm->name = 'comment_preview_page';
+  $strongarm->value = '1';
+  $export['comment_preview_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'features_codecache';
-  $strongarm->value = array(
-    'delft_features' => array(
-      'filter' => 'f9765c74d53130ef2476addfd5b2d47e',
-      'dependencies' => 'de1fe28696ab25c912ec1ec0ef3e36eb',
-      'fe_block_settings' => '66472400538ccc29bb61559856672ace',
-      'field_base' => '50334655b6dbd3e1baebd3d2c02220ac',
-      'field_instance' => '9302483c03371aabf630263dabc326d6',
-      'islandora_solr_fields' => '7ab5107253adc9d2bea8d7883a4eb456',
-      'menu_custom' => '96b84d4dd8b2c53571663298553e3d8f',
-      'menu_links' => '42543ea0a30e6a592a5708cb50dcb039',
-      'user_permission' => '43826e54fda58eb0c24ee349b494e3fc',
-      'variable' => 'fe2064baf0dc12d7c067e7c6b45a812d',
-      'node' => '08acc4d1646d2dd23b9ff7250108890b',
-      'views_view' => 'a38ab89e38f5738ea3cc0a95fe010b45',
-      'blockexport_settings' => '8277420cb3108994602af5369eb54cc8',
-    ),
-  );
-  $export['features_codecache'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'features_ignored_orphans';
-  $strongarm->value = array();
-  $export['features_ignored_orphans'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'features_semaphore';
-  $strongarm->value = array();
-  $export['features_semaphore'] = $strongarm;
+  $strongarm->name = 'comment_subject_field_page';
+  $strongarm->value = 1;
+  $export['comment_subject_field_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -252,150 +243,26 @@ function delft_features_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'islandora_solr_url';
-  $strongarm->value = 'http://localhost:8080/solr';
-  $export['islandora_solr_url'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_block_1_admin_title';
-  $strongarm->value = 'Browse by category menu block';
-  $export['menu_block_1_admin_title'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_block_1_depth';
+  $strongarm->name = 'language_content_type_page';
   $strongarm->value = '0';
-  $export['menu_block_1_depth'] = $strongarm;
+  $export['language_content_type_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_block_1_expanded';
-  $strongarm->value = 0;
-  $export['menu_block_1_expanded'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_block_1_follow';
-  $strongarm->value = 0;
-  $export['menu_block_1_follow'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_block_1_level';
-  $strongarm->value = '1';
-  $export['menu_block_1_level'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_block_1_parent';
-  $strongarm->value = 'menu-browse-by-category:0';
-  $export['menu_block_1_parent'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_block_1_sort';
-  $strongarm->value = 0;
-  $export['menu_block_1_sort'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_block_1_title_link';
-  $strongarm->value = 0;
-  $export['menu_block_1_title_link'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_block_ids';
+  $strongarm->name = 'menu_options_page';
   $strongarm->value = array(
-    0 => 1,
+    0 => 'menu-footer-men',
+    1 => 'main-menu',
   );
-  $export['menu_block_ids'] = $strongarm;
+  $export['menu_options_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_default_active_menus';
-  $strongarm->value = array(
-    0 => 'menu-browse-by-category',
-    1 => 'menu-footer-men',
-    2 => 'main-menu',
-    3 => 'management',
-    4 => 'navigation',
-    6 => 'user-menu',
-    7 => 'devel',
-  );
-  $export['menu_default_active_menus'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_expanded';
-  $strongarm->value = array();
-  $export['menu_expanded'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_masks';
-  $strongarm->value = array(
-    0 => 501,
-    1 => 493,
-    2 => 250,
-    3 => 247,
-    4 => 246,
-    5 => 245,
-    6 => 213,
-    7 => 126,
-    8 => 125,
-    9 => 124,
-    10 => 123,
-    11 => 122,
-    12 => 121,
-    13 => 117,
-    14 => 111,
-    15 => 63,
-    16 => 62,
-    17 => 61,
-    18 => 60,
-    19 => 59,
-    20 => 58,
-    21 => 55,
-    22 => 53,
-    23 => 45,
-    24 => 44,
-    25 => 31,
-    26 => 30,
-    27 => 29,
-    28 => 28,
-    29 => 27,
-    30 => 26,
-    31 => 24,
-    32 => 23,
-    33 => 22,
-    34 => 21,
-    35 => 15,
-    36 => 14,
-    37 => 13,
-    38 => 12,
-    39 => 11,
-    40 => 7,
-    41 => 6,
-    42 => 5,
-    43 => 3,
-    44 => 2,
-    45 => 1,
-  );
-  $export['menu_masks'] = $strongarm;
+  $strongarm->name = 'menu_parent_page';
+  $strongarm->value = 'main-menu:0';
+  $export['menu_parent_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -405,6 +272,13 @@ function delft_features_strongarm() {
     0 => 'status',
   );
   $export['node_options_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'node_preview_page';
+  $strongarm->value = '1';
+  $export['node_preview_page'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -423,15 +297,8 @@ function delft_features_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'site_mail';
-  $strongarm->value = 'admin@example.com';
-  $export['site_mail'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'site_name';
-  $strongarm->value = 'Colonial';
+  $strongarm->value = 'islandora';
   $export['site_name'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -487,20 +354,9 @@ function delft_features_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'views_block_hashes';
-  $strongarm->value = array(
-    '30151412eb73ff9de45ec4209bd0898d' => 'datastream_downloads_by_country-block',
-    '7518164537523ba73652c9a5fd647fe6' => 'object_visitors_by_country-block',
-    '0e421ddcad5e4ddbe2f4e87f52252332' => 'datastream_downloads_by_month-block',
-  );
-  $export['views_block_hashes'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'views_defaults';
   $strongarm->value = array(
-    'frontpage' => FALSE,
+    'frontpage' => TRUE,
   );
   $export['views_defaults'] = $strongarm;
 

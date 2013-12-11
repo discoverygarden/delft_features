@@ -392,6 +392,48 @@ islandora/search/*',
     'visibility' => 0,
   );
 
+  $export['system-navigation'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'navigation',
+    'module' => 'system',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'dtu_theme' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'dtu_theme',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
+  $export['user-login'] = array(
+    'cache' => -1,
+    'css_class' => '',
+    'custom' => 0,
+    'delta' => 'login',
+    'module' => 'user',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'dtu_theme' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'dtu_theme',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['views-image_blocks-block'] = array(
     'cache' => -1,
     'css_class' => '',

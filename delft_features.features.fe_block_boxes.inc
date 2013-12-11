@@ -55,7 +55,10 @@ function delft_features_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Islandora search block from PHP';
   $fe_block_boxes->format = 'php_code';
   $fe_block_boxes->machine_name = 'php_search';
-  $fe_block_boxes->body = '<?php print drupal_render(drupal_get_form(\'islandora_solr_simple_search_form\')); ?>';
+  $fe_block_boxes->body = '<?php
+$form = drupal_get_form(\'islandora_solr_simple_search_form\');
+print drupal_render($form);
+?>';
 
   $export['php_search'] = $fe_block_boxes;
 
